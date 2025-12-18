@@ -246,12 +246,17 @@
     <h2>Contact</h2>
     <div class="grid">
       <div class="card">
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea rows="4" placeholder="Your Message"></textarea>
-          <button type="submit">Send Message</button>
+        <form action="https://formspree.io/f/xrezgepz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+
+        <!-- Optional spam protection -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send Message</button>
         </form>
+
         <p style="margin-top:1rem;">Email: <strong>edwardlangani@gmail.com</strong></p>
       </div>
     </div>
